@@ -119,3 +119,52 @@
 1. Implement every DSA pattern asked at top product companies (Google, Microsoft, Amazon, Meta, Apple), module by module.
    - 28-module course under `src/dsa/`, each module a runnable Java file with template + 3–10 worked LC problems + practice set. Index at `src/dsa/Theory.md`.
    - Phases: Array/String foundations → Linear data structures → Trees → Graphs → Recursion/Bits → DP (8 modules) → Greedy.
+
+## kafka.basics
+1. What is Apache Kafka and what problem does it solve?
+2. What are the core components of Kafka? (Producer, Consumer, Broker, Topic, Partition, ZooKeeper/KRaft)
+3. What is a Kafka Topic and a Partition? How does ordering work?
+4. What is a Kafka Offset?
+5. What is a Consumer Group? How does partition assignment work?
+6. What is Replication and the ISR (In-Sync Replicas)?
+7. What are Producer acknowledgments: acks=0, acks=1, acks=all?
+8. What are Delivery Semantics: at-most-once, at-least-once, exactly-once?
+9. How does Kafka store data on disk? (Log segments, sequential I/O, page cache)
+10. What are Kafka's retention policies? (time-based, size-based, compaction)
+11. What happens during Consumer Rebalancing? What strategies exist?
+12. What are the key Producer configuration parameters and tuning?
+13. What are the key Consumer configuration parameters and tuning?
+14. What is Consumer Lag? How do you monitor it?
+15. Kafka vs traditional message queues (RabbitMQ) — comparison.
+16. What are Kafka's internal topics? (__consumer_offsets, __transaction_state)
+17. ZooKeeper vs KRaft mode — what changed and why?
+18. What are Kafka's compression options? When to use each?
+19. What is Log Compaction? How does it work in detail?
+20. What is Kafka Streams? KStream, KTable, windowing types.
+21. What is Kafka Connect? Source vs Sink connectors.
+22. What is Schema Evolution with Avro + Schema Registry?
+23. Kafka High-Availability patterns — partition sizing, MirrorMaker 2, rack awareness.
+24. How does Exactly-Once Semantics (EOS) work end-to-end?
+25. Common Kafka interview gotchas.
+
+## indexing.deep-dive
+1. What is a database index? Core trade-offs.
+2. How does a B-Tree index work? How is B+ Tree different?
+3. What is a Clustered vs Non-Clustered index?
+4. What is a Covering Index? What is an index-only scan?
+5. What is a Composite Index and the Left-Prefix Rule?
+6. What is Index Cardinality and Selectivity?
+7. How does a Hash Index work? When to use it?
+8. What is a Bitmap Index? When is it used?
+9. What is a Full-Text Index? How does an Inverted Index work?
+10. What is a Partial Index?
+11. What is an Expression / Functional Index?
+12. PostgreSQL indexing internals: heap, HOT updates, MVCC, visibility map, index types.
+13. MySQL InnoDB indexing internals: clustered PK, secondary index double-lookup, UUID PK problem.
+14. How to read EXPLAIN / EXPLAIN ANALYZE output?
+15. What is an LSM Tree? How does it differ from B-Tree?
+16. How does indexing work in NoSQL? (MongoDB, Elasticsearch, Cassandra)
+17. OLTP vs OLAP indexing strategies — column stores and zone maps.
+18. How does the query optimizer choose which index to use?
+19. What is index maintenance overhead? Index bloat and fragmentation.
+20. Common indexing mistakes and gotchas.
